@@ -9,6 +9,7 @@ draw_borders no
 default_color white
 alignment top_right
 no_buffers yes
+own_buffer yes
 
 gap_x 20
 gap_y 20
