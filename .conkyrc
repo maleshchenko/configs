@@ -27,8 +27,11 @@ ${membar 3}
 Swap ${alignr}$swap / $swapmax ($swapperc%)
 ${swapbar 3}
 
-/ ${alignr}${fs_free /} / ${fs_size /}
+/ ${alignr}free ${fs_free /} / ${fs_size /}
 ${fs_bar 3 /}
+
+tmpfs ${alignr} free ${fs_free /var/tmp/portage} / ${fs_size /var/tmp/portage}
+${fs_bar 3 /var/tmp/porage}
 
 
 CPU:
@@ -36,6 +39,7 @@ CPU:
 ${top name 1}$alignr${top cpu 1}
 ${top name 2}$alignr${top cpu 2}
 ${top name 3}$alignr${top cpu 3}
+${top name 4}$alignr${top cpu 4}
 
 
 Memory:
@@ -43,3 +47,4 @@ Memory:
 ${top_mem name 1}$alignr${top_mem mem 1}
 ${top_mem name 2}$alignr${top_mem mem 2}
 ${top_mem name 3}$alignr${top_mem mem 3}
+${top_mem name 4}$alignr${top_mem mem 4}
