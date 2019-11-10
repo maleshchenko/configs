@@ -31,7 +31,7 @@ ${swapbar 3}
 ${fs_bar 3 /}
 
 tmpfs ${alignr} free ${fs_free /var/tmp/portage} / ${fs_size /var/tmp/portage}
-${fs_bar 3 /var/tmp/porage}
+${fs_bar 3 /var/tmp/portage}
 
 
 CPU:
